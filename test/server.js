@@ -144,8 +144,8 @@ describe('ExpressPeerServer', function() {
     });
 
     describe('#_generateClientId', function() {
-      it('should generate a 16-character ID', function() {
-      expect(p._generateClientId('anykey').length).to.be(16);
+      it('should generate a 5-character ID', function() {
+      expect(p._generateClientId('anykey').length).to.be(5);
       });
     });
   });
